@@ -1,0 +1,359 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: Montserrat,'Heiti TC','microsoft jhenghei';
+    -webkit-text-size-adjust: none;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+img {
+    max-width: 100%;
+    width: 100%\0;
+    height: auto;
+}
+
+a {
+    font-size: inherit;
+    cursor: pointer;
+    color: inherit;
+    line-height: inherit;
+    text-decoration: none;
+    transition: all ease .5s;
+}
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+input[type="text"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+button,
+input[type="button"] {
+    font-family: Montserrat,'Heiti TC','microsoft jhenghei';
+    -webkit-appearance: none;
+    font-size: 1rem;
+    outline: none;
+}
+
+select {
+    font-family: Montserrat,'Heiti TC','microsoft jhenghei';
+    font-size: 1rem;
+}
+
+section {
+    display: block;
+    clear: both;
+}
+
+header {
+    background-color: #f0f0f0;
+    text-align: left;
+    padding: 10px 0px;
+    max-width: 640px;
+    margin: 0px auto;
+    border-left: .5px solid #d9d9d9;
+    border-right: .5px solid #d9d9d9;
+}
+
+    header .ed-logo img {
+        max-width: 60px;
+        width: 20%;
+        height: auto;
+    }
+
+.container {
+    background: #fafafa;
+    max-width: 640px;
+    margin: 0px auto;
+    border-left: .5px solid #d9d9d9;
+    border-right: .5px solid #d9d9d9;
+    text-align: center;
+    padding: 60px 0px;
+    position: relative;
+}
+
+    .container .site-content {
+        margin: 0px auto;
+        width: 80%;
+    }
+
+        .container .site-content .input .title {
+            color: #162056;
+            font-size: 1.15rem;
+            line-height: 150%;
+        }
+
+        .container .site-content .input .content {
+            margin: 20px 0px 0px 0px;
+        }
+
+.serial-number .input-text {
+    width: 100%;
+    border: 0.5px solid #d9d9d9;
+    background: rgba(255,255,255,.5);
+    color: #162056;
+    font-size: .85rem;
+    line-height: 150%;
+    padding: 10px 0px;
+    text-align: center;
+}
+
+.btn {
+    background: #0085ca;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0px;
+    font-size: .85rem;
+    border: none;
+    width: 100%;
+    line-height: 150%;
+    margin: 10px 0px 0px 0px;
+    transition: all ease .5s;
+    cursor: pointer;
+}
+
+    .btn[disabled] {
+        background: #b0b0b0;
+        color: #d9d9d9;
+        box-shadow: inset 1px 1px 2px rgba(0,0,0,.05);
+        text-shadow: -1px -1px 0px rgba(255,255,255,.1);
+    }
+
+    .btn:hover {
+        background: #003591;
+    }
+
+.back-btn .btn {
+    width: auto;
+    padding: 10px 50px;
+}
+
+.danger-text {
+    color: #D52B1E;
+    font-size: .75rem;
+    margin: 10px 0px 0px 0px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    display: none;
+}
+
+    .danger-text.error {
+        display: block;
+    }
+
+.container .site-content .result .title {
+    color: #162056;
+    font-size: 1.15rem;
+    line-height: 150%;
+}
+
+.container .site-content .result.error .title {
+    color: #D52B1E;
+    font-size: 1.15rem;
+    line-height: 150%;
+}
+
+.container .site-content .result .description {
+    font-size: .9rem;
+    letter-spacing: 1px;
+    color: #808080;
+    margin: 20px 0px;
+}
+
+.container .site-content .result .contact-info {
+    margin: 20px auto 0px auto;
+    font-size: .8rem;
+    color: #808080;
+    display: none;
+}
+
+    .container .site-content .result .contact-info a {
+        color: #0085ca;
+        text-decoration: underline;
+        transition: all ease .5s;
+        word-break: break-word;
+    }
+
+        .container .site-content .result .contact-info a:hover {
+            text-decoration: none;
+            color: #162056;
+        }
+
+.container .site-content .result.error .contact-info {
+    display: block;
+}
+
+.container .site-content .loading-area {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    background: rgba(0,0,0,0.9);
+    margin: auto;
+    z-index: 999;
+    display: none;
+}
+
+    .container .site-content .loading-area.for-process {
+        position: fixed;
+    }
+
+    .container .site-content .loading-area.loading {
+        display: block;
+    }
+
+    .container .site-content .loading-area .content {
+        display: table;
+        width: 100%;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        bottom: 0px;
+        right: 0px;
+        margin: auto;
+        text-align: center;
+        color: #f5f5f5;
+        font-size: .85rem;
+        line-height: 150%;
+    }
+
+@keyframes LoadingIcon {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    0% {
+        transform: rotate(-360deg)
+    }
+}
+
+
+
+.container .site-content .loading-area .content .pic img {
+    width: 80px;
+    height: 80px;
+    animation: LoadingIcon 3s linear 0s infinite,LoadingIconOpacity 2s linear infinite;
+}
+
+.container .site-content .loading-area .content .title {
+    font-size: 1.15rem;
+    margin: 0px;
+    font-weight: 300;
+}
+
+@keyframes LoadingTitleWords {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+.container .site-content .loading-area .content .title {
+    animation: LoadingTitleWords 3s linear 3s infinite;
+}
+
+    .container .site-content .loading-area .content .title .word {
+        animation: LoadingTitleWords 1s linear 0s forwards;
+        opacity: 0;
+    }
+
+        .container .site-content .loading-area .content .title .word:nth-child(1) {
+            animation-name: LoadingTitleWords;
+            animation-delay: 0s;
+        }
+
+        .container .site-content .loading-area .content .title .word:nth-child(2) {
+            animation-name: LoadingTitleWords;
+            animation-delay: 0.3s;
+        }
+
+        .container .site-content .loading-area .content .title .word:nth-child(3) {
+            animation-name: LoadingTitleWords;
+            animation-delay: 0.6s;
+        }
+
+        .container .site-content .loading-area .content .title .word:nth-child(4) {
+            animation-name: LoadingTitleWords;
+            animation-delay: 0.9s;
+        }
+
+        .container .site-content .loading-area .content .title .word:nth-child(5) {
+            animation-name: LoadingTitleWords;
+            animation-delay: 1.2s;
+        }
+
+        .container .site-content .loading-area .content .title .word:nth-child(6) {
+            animation-name: LoadingTitleWords;
+            animation-delay: 1.5s;
+        }
+
+        .container .site-content .loading-area .content .title .word:nth-child(7) {
+            animation-name: LoadingTitleWords;
+            animation-delay: 1.8s;
+        }
+
+        .container .site-content .loading-area .content .title .word:nth-child(8) {
+            animation-name: LoadingTitleWords;
+            animation-delay: 2.1s;
+        }
+
+        .container .site-content .loading-area .content .title .word:nth-child(9) {
+            animation-name: LoadingTitleWords;
+            animation-delay: 2.4s;
+        }
+
+        .container .site-content .loading-area .content .title .word:nth-child(10) {
+            animation-name: LoadingTitleWords;
+            animation-delay: 2.7s;
+        }
+
+.container .site-content .loading-area .content .description {
+    margin: 20px 0px 0px 0px;
+}
+
+footer {
+    background-color: #f0f0f0;
+    text-align: left;
+    padding: 20px 0px;
+    max-width: 640px;
+    margin: 0px auto;
+    border-left: .5px solid #d9d9d9;
+    border-right: .5px solid #d9d9d9;
+}
+
+    footer .site-footer {
+        margin: 20px auto;
+        width: calc( 100% - 40px );
+        font-size: .85rem;
+        color: #808080;
+        line-height: 150%;
+    }
+
+        footer .site-footer .title {
+            font-weight: 600;
+            font-size: 1rem;
+        }
+
+        footer .site-footer ul {
+            margin: 20px 0px 0px 0px;
+            padding: 0px;
+        }
+
+            footer .site-footer ul li {
+                margin: 5px 0px 0px 20px;
+                padding: 0px;
+                line-height: 150%;
+                color: #909090;
+            }
+header .site-header {
+    padding: 0px 10px;
+}
