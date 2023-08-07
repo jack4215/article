@@ -1,1 +1,69 @@
 
+
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <title>彈跳視窗</title>
+</head>
+
+<script src='https://cnc.nptu.edu.tw/var/file/7/1007/img/jquery.js'></script>
+<script src='https://cnc.nptu.edu.tw/var/file/7/1007/img/bootstrap.js'></script>
+<script>
+$(function() {
+  $('#modalAd').modal('show')
+});
+</script>
+
+<link rel='stylesheet' href='https://cnc.nptu.edu.tw/var/file/7/1007/img/bootstrap.css'>
+<style type="text/css">
+.modal-bulletin {
+  position: relative;
+  top: -10px;
+  left: -270px;
+  padding: 40px;
+  width: 100%;
+}
+.modal-bulletin .close {
+  cursor: pointer;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: 0;
+  top: 0;
+  opacity: 1;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  padding: 1%;
+}
+.modal-bulletin .close:before, .modal-bulletin .close:after {
+  content: "";
+  display: block;
+  height: 1.4px;
+  background: #fff;
+  width: 100%;
+}
+.modal-bulletin .close:before {
+  transform: rotate(45deg);
+}
+.modal-bulletin .close:after {
+  transform: rotate(-45deg);
+}
+.modal-bulletin .modal-content .modal-bulletin-img {
+  width: 1000px;
+  height: auto;
+  margin-top: -30px;
+}
+</style>
+
+
+<!-- Modal -->
+<div class="modal fade" id="modalAd">
+  <div class="modal-dialog modal-bulletin" role="document">
+      <button type="button" class="close" data-dismiss="modal"></button>
+    <div class="modal-content">
+        <img class="modal-bulletin-img" src="https://ec.nptu.edu.tw/var/file/119/1119/img/4447/430667689.png" alt="">
+    </div>
+  </div>
+</div>
+
+</html>
