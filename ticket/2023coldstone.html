@@ -15,6 +15,12 @@ function showBarCode() {
   let params = githubURL.searchParams;
   var code = params.get('id');
   var H2 = params.get('id');
+
+    // 檢查參數位數是否為10位
+  if (code.length !== 10) {
+    alert("視窗條碼有誤");
+    return;
+  }
 JsBarcode("#H1", code, {
   width: 2.2,
   height: 65,
