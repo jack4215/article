@@ -15,6 +15,11 @@ function showBarCode() {
   let params = githubURL.searchParams;
   var code = params.get('id');
   var H2 = params.get('id');
+
+  if (code.length !== 10) {
+    alert("兌換序號有誤");
+    return;
+  }
 JsBarcode("#H1", code, {
   width: 2.2,
   height: 65,

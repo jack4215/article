@@ -16,9 +16,8 @@ function showBarCode() {
   var code = params.get('id');
   var H2 = params.get('id');
 
-    // 檢查參數位數是否為10位
   if (code.length !== 10) {
-    alert("視窗條碼有誤");
+    alert("兌換序號有誤");
     return;
   }
 JsBarcode("#H1", code, {
