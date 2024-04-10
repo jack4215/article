@@ -14,19 +14,42 @@ function showBarCode() {
   let githubURL = new URL(location.href);
   let params = githubURL.searchParams;
   var code = params.get('id');
-  var H2 = params.get('id');
+  var savedCode = sessionStorage.getItem('savedCode');
 
+  // 檢查參數位數是否為10位
   if (code.length !== 10) {
-    alert("兌換序號有誤");
+    alert("視窗條碼有誤");
     return;
   }
-JsBarcode("#H1", code, {
-  width: 2.2,
-  height: 65,
-  fontSize: 14,
-  background: "#FFFFFF",
-});
-document.getElementById("H2");
+
+  // 檢查 id 參數是否被修改
+  if (code !== savedCode) {
+    alert("請勿修改序號");
+    return;
+  }
+
+  // 如果參數位數正確且 id 參數未被修改，則顯示條碼
+  JsBarcode("#H1", code, {
+    width: 2.2,
+    height: 65,
+    fontSize: 14,
+    background: "#FFFFFF",
+  });
+}
+
+// 儲存原始序號到 sessionStorage 中
+function saveCode() {
+  let githubURL = new URL(location.href);
+  let params = githubURL.searchParams;
+  var code = params.get('id');
+  sessionStorage.setItem('savedCode', code);
+}
+
+// 在頁面載入時調用 saveCode 函式
+saveCode();
+
+// 調用 showBarCode 函式
+showBarCode();
 }
 </script>
 <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
