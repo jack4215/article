@@ -21,19 +21,24 @@
     font-size: 1.4em !important;
   }
 </style>
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.all.min.js"></script>    
-<script>
-  Swal.fire({
-    title: "謝謝爸爸的抖內！",
-    text: "將導向 LINE Pay 進行付款，請勿重整頁面",
-    icon: "success",
-    confirmButtonText: "立即前往"
-  }).then((result) => {
-    if (result.isConfirmed) {
-      window.location.href='https://qrcodepay.line.me/qr/payment/nstFnjYuBG4W10aBqL5rNhZ62HWOJhjbg6wn7UEQIYl0qi3dBDobyQZuiU7slA9U';
-    } else {
-      window.location.href='https://qrcodepay.line.me/qr/payment/nstFnjYuBG4W10aBqL5rNhZ62HWOJhjbg6wn7UEQIYl0qi3dBDobyQZuiU7slA9U';
-    }
-  });
-</script>
+
+<div id="article" class="wrap article article-body">
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.all.min.js"></script>    
+    <script>
+      Swal.fire({
+        title: "謝謝爸爸的抖內！",
+        text: "將導向 LINE Pay 進行付款，請勿重整頁面",
+        icon: "success",
+        confirmButtonText: "立即前往"
+      }).then((result) => {
+        if (result.isConfirmed) {
+          window.location.href='https://qrcodepay.line.me/qr/payment/nstFnjYuBG4W10aBqL5rNhZ62HWOJhjbg6wn7UEQIYl0qi3dBDobyQZuiU7slA9U';
+        } else {
+          window.location.href='https://qrcodepay.line.me/qr/payment/nstFnjYuBG4W10aBqL5rNhZ62HWOJhjbg6wn7UEQIYl0qi3dBDobyQZuiU7slA9U';
+        }
+      });
+    </script>
+  </body>
+</div>
 </html>
