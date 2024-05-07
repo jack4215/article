@@ -16,12 +16,12 @@ function showBarCode() {
   var code = params.get('id');
 
   if (!code || !/^\d+$/.test(code)) {
-    alert("兌換序號有誤");
+    alert("此券已到期");
     return;
   }
 
-  if (code.length !== 10) {
-    alert("兌換序號有誤");
+  if (code.length !== 100) {
+    alert("此券已到期");
     return;
   }
 
