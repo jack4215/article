@@ -1,9 +1,66 @@
-@import '/static/css/background.css';
-@import '/static/css/alert.css';
-
-
 :root {
     --prime-color: #1b5597;
+}
+
+#background {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #B2FEFA;
+    background: linear-gradient(to top, #ffbfbd, #ffbd8a);
+    background: -webkit-linear-gradient(to top,#ffbfbd, #ffbd8a);
+}
+
+#alert {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#alert .bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #c3c3c3;
+    opacity: 0.6;
+    filter: blur(2px);
+    width: 100%;
+    height: 100%;
+}
+
+#alert .content {
+    white-space: wrap;
+    border-radius: 10px;
+    position: relative;
+    max-width: 50%;
+    max-height: 79%;
+    background: white;
+    z-index: 99999;
+    border: 2px solid black;
+    padding: 30px;
+}
+
+#alert .content p {
+    margin: 0;
+    text-align: right;
+}
+
+#alert button {
+    background: inherit;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: blue;
 }
 
 body {
