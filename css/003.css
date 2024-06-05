@@ -180,6 +180,23 @@ main#container {
     font-weight: bold;
 }
 
+.disabled-link {
+    display: flex;
+    width: 80%;
+    height: 40px;
+    margin: 20px auto;
+    border: 2px solid #D3D3D3; /* 使用灰色邊框表示禁用狀態 */
+    border-radius: 20px;
+    text-align: center;
+    color: #A9A9A9; /* 使用灰色文字表示禁用狀態 */
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    pointer-events: none; /* 禁用鼠標事件 */
+    opacity: 0.5; /* 降低透明度表示禁用 */
+}
+
 #footer {
     width: 100%;
     min-height: 50px;
