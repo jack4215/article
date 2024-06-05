@@ -9,7 +9,7 @@
     padding-left: 0;
     display: flex;
     list-style-type: none;
-    animation: marqee 15s linear infinite;
+    animation: marqee 20s linear infinite;
     position: absolute;
 }
 
