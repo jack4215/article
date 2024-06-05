@@ -181,20 +181,19 @@ main#container {
 }
 
 .disabled-link {
-    display: flex;
-    width: 80%;
-    height: 40px;
-    margin: 20px auto;
-    border: 2px solid #D3D3D3; /* 使用灰色邊框表示禁用狀態 */
-    border-radius: 20px;
-    text-align: center;
-    color: #A9A9A9; /* 使用灰色文字表示禁用狀態 */
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f2f2f2;
+    color: #999999;
     text-decoration: none;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    pointer-events: none; /* 禁用鼠標事件 */
-    opacity: 0.5; /* 降低透明度表示禁用 */
+    cursor: not-allowed;
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.disabled-link:hover {
+    background-color: #f2f2f2;
+    color: #999999;
 }
 
 #footer {
