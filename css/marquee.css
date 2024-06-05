@@ -17,7 +17,7 @@
     white-space: nowrap;
     margin-right: 2em;
     font-weight: bold;
-    color: yellow;
+    color: rgb(253, 211, 0);
 }
 
 @keyframes marqee {
