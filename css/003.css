@@ -177,7 +177,7 @@ main#container {
     align-items: center;
     justify-content: center;
     font-weight: bold;
-    background-color: rgba(0, 40, 87, 0.4);
+    background-color: rgba(0, 40, 87, 0.5);
 }
 
 #linktree a:hover {
@@ -191,7 +191,7 @@ main#container {
     width: 80%;
     height: 40px;
     margin: 20px auto;
-    border: 2px solid #D3D3D3;
+    border: 2px solid #bccde6 !important;
     border-radius: 20px;
     text-align: center;
     color: #A9A9A9; 
@@ -200,7 +200,7 @@ main#container {
     justify-content: center;
     font-weight: bold;
     pointer-events: none;
-    opacity: 0.5; 
+    opacity: 0.55;
 }
 
 #footer {
