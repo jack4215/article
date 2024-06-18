@@ -1,5 +1,5 @@
 :root {
-    --prime-color: #1b5597;
+    --prime-color: #f5f5f5;
 }
 
 #background {
@@ -11,9 +11,9 @@
     position: fixed;
     top: 0;
     left: 0;
-    background: #B2FEFA; /* 備用背景顏色 */
-    background: linear-gradient(to top, #ffbfbd, #ffbd8a); /* 備用漸層背景 */
-    background: -webkit-linear-gradient(to top,#ffbfbd, #ffbd8a); /* Webkit瀏覽器的備用漸層背景 */
+    background: #000000; /* 備用背景顏色 */
+    background: linear-gradient(to top, #000000, #000000); /* 備用漸層背景 */
+    background: -webkit-linear-gradient(to top,#000000, #000000); /* Webkit瀏覽器的備用漸層背景 */
     background-image: url('https://prd.storage.lit.link/images/creators/ddb0fc47-4f66-418d-99b9-f9512047e326/805bd801-bc6c-4761-8e7f-e628a04d9704.jpeg'), linear-gradient(to top, #ffbfbd, #ffbd8a);
     background-size: cover;
     background-position: center;
@@ -169,7 +169,7 @@ main#container {
     width: 80%;
     height: 40px;
     margin: 20px auto;
-    border: 2px solid var(--prime-color);
+    border: 2px solid #73A5F5;
     border-radius: 20px;
     text-align: center;
     color: inherit;
@@ -177,6 +177,7 @@ main#container {
     align-items: center;
     justify-content: center;
     font-weight: bold;
+    background-color: rgba(0, 40, 87, 0.4);
 }
 
 #linktree a:hover {
