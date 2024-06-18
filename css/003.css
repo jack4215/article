@@ -11,10 +11,15 @@
     position: fixed;
     top: 0;
     left: 0;
-    background: #B2FEFA;
-    background: linear-gradient(to top, #ffbfbd, #ffbd8a);
-    background: -webkit-linear-gradient(to top,#ffbfbd, #ffbd8a);
+    background: #B2FEFA; /* 備用背景顏色 */
+    background: linear-gradient(to top, #ffbfbd, #ffbd8a); /* 備用漸層背景 */
+    background: -webkit-linear-gradient(to top,#ffbfbd, #ffbd8a); /* Webkit瀏覽器的備用漸層背景 */
+    background-image: url('https://prd.storage.lit.link/images/creators/ddb0fc47-4f66-418d-99b9-f9512047e326/805bd801-bc6c-4761-8e7f-e628a04d9704.jpeg'), linear-gradient(to top, #ffbfbd, #ffbd8a);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
+
 
 #alert {
     position: fixed;
