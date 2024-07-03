@@ -23,10 +23,6 @@
         height: 1071px; /* 設置 iframe 的原始高度 */
     }
 
-    div.xpWfed {
-        display: none;
-    }
-
     @media (max-width: 780px) {
         .responsive-iframe {
             width: 100%;
@@ -80,5 +76,14 @@
         <br><br><br><br><br><br>
       </article>
     </div>
+    <script>
+      document.getElementById('google-form').onload = function() {
+          var iframeDocument = this.contentDocument || this.contentWindow.document;
+          var elementToHide = iframeDocument.querySelector('div.xpWfed');
+          if (elementToHide) {
+              elementToHide.style.display = 'none';
+          }
+      };
+    </script>
   </body>
 </html>
