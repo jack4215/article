@@ -17,6 +17,21 @@
     <link href="/article/css/001.css" rel="stylesheet">  
 </head>
 <script type="text/javascript" src="/jackformliff/time.js"></script> 
+<style>
+    .responsive-iframe {
+        width: 100%;
+        height: 1071px; /* 設置 iframe 的原始高度 */
+    }
+
+    @media (max-width: 780px) {
+        .responsive-iframe {
+            width: 100%;
+            height: calc(100vh - 20px); 
+            overflow-x: hidden;
+            overflow-y: hidden;
+        }
+    }
+</style>
 
 <body onload="startTime()">
     <div class="wrap">
