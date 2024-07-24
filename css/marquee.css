@@ -1,32 +1,39 @@
-.marqee {
-    height: 3em;
-    margin: 0 auto;
-    overflow: hidden; 
-    position: relative;
-   }
-   
-.marqee > ul {
-    padding-left: 0;
-    display: flex;
-    list-style-type: none;
-    animation: marqee 20s linear infinite;
-    position: absolute;
+ul.marquee {
+	/* required styles */
+	display: block;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	line-height: 1;
+	position: relative;
+	overflow: hidden;
+	height: 2rem; /* height should be included to reserve visual space for the marquee */
 }
 
-.marqee > ul > li {
-    white-space: nowrap;
-    margin-right: 2em;
-    font-weight: bold;
-    color: yellow;
+ul.marquee li {
+	/* required styles */
+	position: absolute;
+	top: -999em;
+	left: 0;
+	display: block;
+	white-space: nowrap; /* keep all text on a single line */
 }
-
-@keyframes marqee {
-    0% {
-        left: 100%;
-        transform: translateX(0%);
-    }
-    100% {
-        left: 0;
-        transform: translateX(-100%);
-    }
-}
+/*====== News-Ticker ======*/
+.news-ticker .column {
+	float: left;
+	font-weight: bold;
+	margin-right: 2em;
+	color: yellow;
+  }
+.news-ticker .right {
+	vertical-align: middle;
+	background: rgba(0, 40, 87, 0.5);
+	line-height: 40px;
+	height: 40px;
+	width: 100%;
+	overflow: hidden;
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+  }
+  
