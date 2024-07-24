@@ -17,7 +17,7 @@ ul.marquee li {
 	justify-content: center;
 }
 .news-ticker .marquee {
-	font-size: 0.9em;
+	font-size: 1em !important; 
 	font-weight: bold;
 	color: yellow;
  	vertical-align: middle;
