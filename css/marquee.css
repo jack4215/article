@@ -17,15 +17,14 @@ ul.marquee li {
 	justify-content: center;
 }
 .news-ticker .marquee {
-	margin-left: 34px;
+	font-size: 16px;
 	font-weight: bold;
-	margin-right: 2em;
 	color: yellow;
  	vertical-align: middle;
 	background: rgba(0, 33, 70, 0.37);
 	line-height: 40px;
 	height: 40px;
-	width: 90%;
+	width: 95%;
 	overflow: hidden;
 	text-overflow: ellipsis;
 	white-space: nowrap;
