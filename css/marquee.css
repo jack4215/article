@@ -20,18 +20,18 @@ ul.marquee li {
 }
 /*====== News-Ticker ======*/
 .news-ticker .column {
+	float: left;
 	font-weight: bold;
 	margin-right: 2em;
 	color: yellow;
   }
-.news-ticker {
+.news-ticker .right {
 	vertical-align: middle;
 	background: rgba(0, 40, 87, 0.5);
 	line-height: 40px;
 	height: 40px;
-	width: 95%;
+	width: 100%;
 	overflow: hidden;
-	-o-text-overflow: ellipsis;
 	text-overflow: ellipsis;
 	white-space: nowrap;
   }
