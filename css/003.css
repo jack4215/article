@@ -1,7 +1,13 @@
 :root {
     --prime-color: #f5f5f5;
 }
+@import url("https://fonts.googleapis.com/earlyaccess/notosanstc.css");
+body {
+    font-family: "Noto Sans TC", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 18px;
 
+
+}
 #background {
     width: 100vw;
     height: 100vh;
