@@ -1,13 +1,7 @@
 ul.marquee {
 	/* required styles */
-	display: block;
-	padding: 0;
-	margin: 0;
-	list-style: none;
-	line-height: 1;
 	position: relative;
 	overflow: hidden;
-	height: 2rem; /* height should be included to reserve visual space for the marquee */
 }
 
 ul.marquee li {
@@ -18,21 +12,23 @@ ul.marquee li {
 	display: block;
 	white-space: nowrap; /* keep all text on a single line */
 }
-/*====== News-Ticker ======*/
-.news-ticker .column {
-	float: left;
+.news-ticker {
+	display: flex;
+	justify-content: center;
+}
+.news-ticker .marquee {
+	margin-left: 34px;
 	font-weight: bold;
 	margin-right: 2em;
 	color: yellow;
-  }
-.news-ticker .right {
-	vertical-align: middle;
-	background: rgba(0, 40, 87, 0.5);
+ 	vertical-align: middle;
+	background: rgba(0, 33, 70, 0.37);
 	line-height: 40px;
 	height: 40px;
-	width: 100%;
+	width: 90%;
 	overflow: hidden;
 	text-overflow: ellipsis;
 	white-space: nowrap;
-  }
-  
+	border: 1px solid #d6d4d43d;
+	border-radius: 5px;
+}
