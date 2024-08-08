@@ -120,7 +120,7 @@
         yScroll: "top",
         showSpeed: 850,
         scrollSpeed: 12,
-        pauseSpeed: 5000,
+        pauseSpeed: 3000,
         pauseOnHover: true,
         loop: -1,
         fxEasingShow: "swing",
