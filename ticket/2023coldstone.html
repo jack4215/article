@@ -15,15 +15,6 @@ function showBarCode() {
   let params = githubURL.searchParams;
   var code = params.get('id');
 
-  if (!code || !/^\d+$/.test(code)) {
-    alert("此券已到期");
-    return;
-  }
-
-  if (code.length !== 10) {
-    alert("此券已到期");
-    return;
-  }
 
   JsBarcode("#H1", code, {
     width: 2.2,
