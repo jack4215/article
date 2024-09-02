@@ -22,8 +22,8 @@ ul.marquee li {
 	color: yellow;
  	vertical-align: middle;
 	background: rgba(0, 33, 70, 0.37);
-	line-height: 40px;
-	height: 40px;
+	line-height: 35px;
+	height: 35px;
 	width: 95%;
 	overflow: hidden;
 	text-overflow: ellipsis;
