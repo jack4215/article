@@ -445,13 +445,13 @@ body.is-instant:after {
 }
 
 #buttons01 .web img {
-    width: 8rem;
+    width: 13rem;
     height: auto;
     border-radius: 0.25rem;
 }
 
 #buttons01 .web span {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     font-weight: 500;
     line-height: 1.5;
     color: #ededed;
