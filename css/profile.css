@@ -455,6 +455,7 @@ body.is-instant:after {
     font-weight: 500;
     line-height: 1.5;
     color: #ededed;
+    text-align: left;
 }
 
 #buttons01 .button:hover {
