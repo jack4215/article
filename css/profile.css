@@ -1535,6 +1535,11 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
         width: 6.5rem;
     }
 
+    #buttons01 .web img {
+        width: 7rem;
+        height: auto;
+    }
+
     #timer01 ul li.delimiter {
         width: 1.5625rem;
     }
