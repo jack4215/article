@@ -429,7 +429,7 @@ body.is-instant:after {
     border: solid 1px #CCCCCC;
 }
 
-#buttons01 .button .web {
+#buttons01 .web {
     color: #ededed;
     border: solid 1px #CCCCCC;
     width: 35rem;
@@ -440,7 +440,10 @@ body.is-instant:after {
     color: #309EDB !important;
 }
 
-
+#buttons01 .web:hover {
+    border-color: #309EDB !important;
+    color: #309EDB !important;
+}
 
 hr {
     align-items: center;
