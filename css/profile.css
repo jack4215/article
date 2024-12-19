@@ -433,6 +433,8 @@ body.is-instant:after {
     color: #ededed;
     border: solid 1px #CCCCCC;
     width: 35rem;
+    height: 10rem;
+    border-radius: 0.5rem;
 }
 
 #buttons01 .button:hover {
