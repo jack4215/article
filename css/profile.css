@@ -429,6 +429,12 @@ body.is-instant:after {
     border: solid 1px #CCCCCC;
 }
 
+#buttons01 .button .web {
+    color: #ededed;
+    border: solid 1px #CCCCCC;
+    width: 35rem;
+}
+
 #buttons01 .button:hover {
     border-color: #309EDB !important;
     color: #309EDB !important;
