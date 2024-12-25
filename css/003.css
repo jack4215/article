@@ -109,6 +109,7 @@ main#container {
 #info h1 {
     font-size: 1.6em;
     padding: 0 10px;
+    font-weight: bold;
 }
 
 #info h1 span {
